@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  package com.renan.variaveis
+
+  class exercicio {
+  }
+
+  fun main() {
+      //checagem variavel mutável ou imutável
+      var varmutable: Int = 6
+      varmutable = 5
+
+      println("Variável mutável $varmutable")
+      println("")
+      val valimutable: Int = 6
+      //valimutable = 5
+
+      println("Variável imutável $valimutable")
+      //fim da checagem mu | imu
+      println("")
+      //checagem número par ou impar
+      val numeroPar = 10
+
+      if (numeroPar % 2 == 0) {
+          println("O número é par")
+      } else {
+          println("O número é ímpar")
+      }
+      println("")
+      val numeroImpar = 15
+
+      if (numeroImpar % 2 == 0) {
+          println("O número é par")
+      } else {
+          println("O número é ímpar")
+      }
+      println("")
+
+      val numwhen = 7
+      when {
+          numwhen % 2 == 0 -> print("O número é par")
+          else -> println("O número é ímpar")
+      }
+      //fim da checagem par ou impar
+      println("")
+
+      val arrayInteiros = IntArray(40)
+
+      for (i in 0 until 39) { arrayInteiros[i] = i + 1
+      }
+
+      val listaDeInteiros = mutableListOf<Int>()
+      for (i in 1..99) {
+          listaDeInteiros.add(i)
+      }
+      println(listaDeInteiros)
+      println("")
+      var soma = 0
+
+      for (numero in listaDeInteiros) {
+          soma += numero
+      }
+
+      println("A soma dos números de 1 a 99 é: $soma")
+  }
+</module>
